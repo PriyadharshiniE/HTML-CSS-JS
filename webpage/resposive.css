@@ -1,0 +1,16 @@
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .navbar {
+    width: 150%;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .navbar, .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="navigation-bar.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="signup.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+<header>
+		
+        <nav class="navbar">
+            <ul>
+				<li><img src = "logo4.png"></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+				<div class="topnav-right">
+					<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="login.html">Log In</a></li>	
+				</div>				
+            </ul>
+        </nav>
+    </header>
+	
+	
+	  <!-- Login Form ends -->
+	  
+	  
+
+        
+            
+       
+        <form id="main" action="login.html" method="post">
+		<h2>Sign Up Form</h2>
+			<div class="input-parent">
+                <label for="">Role  </label>
+				<select autofocus> <option value="role">---Role---</option>
+						<option value="user">User</option>
+						<option value="customer">Customer</option>
+				</select>
+                
+				<small></small>
+            </div>
+            <div class="input-parent">
+                <label for="">User name  </label>
+                <input type="text" placeholder="Enter Username" name="name" id = "name" onfocusout="checkname()" autofocus>
+                
+				<small></small>
+            </div>
+                       <label for="">Gender</label>
+                            <input type="radio" id="male" name="gender" required>Male
+                            <input type="radio" id="female" name="gender" required>Female 
+			<br/>
+			<div class="input-parent">
+                        <label>DOB</label>
+                        <input type="date">
+            </div>
+            <div class="input-parent">
+                <label for="">Email  </label>
+                <input type="text" placeholder="Enter Email" id = "email" onfocusout="checkemail()" autofocus>
+                
+                <small></small>
+            </div>
+            <div class="input-parent">
+                <label for="">Phone Number  </label>
+                <input type="text" placeholder="Enter Phone number" id = "phone" onfocusout="checkphone()" autofocus>
+                
+                <small></small>
+            </div>
+            <div class="input-parent">
+                <label for="">Password  </label>
+                <input type="password" placeholder="Enter Password" id = "password" onfocusout="checkpassword()" autofocus>
+               
+                <small></small>
+            </div>
+            <div class="input-parent">
+                <label for="">Confirm Password  </label>
+                <input type="password" placeholder="Enter Confirm Password" id = "confirmpassword" onfocusout="checkconfirmpassword()" autofocus>
+                
+                <small></small>
+            </div>
+			
+            <button type="submit" id = "submit">Register</button>
+			<p>Already have an  account <a href="login.html">click here</a></p>
+        </form>
+   
+    
+</body>
+</html>

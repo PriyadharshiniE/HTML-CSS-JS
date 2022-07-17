@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title>Login Page</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="navigation-bar.css">
+	<script src="login.js"></script>
+</head>
+<body>
+<!-- Nav Bar starts -->
+ <header>
+		
+        <nav class="navbar">
+            <ul>
+				<li><img src = "logo4.png"></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+				<div class="topnav-right">
+					<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="login.html">Log In</a></li>	
+				</div>				
+            </ul>
+        </nav>
+    </header>
+	<!-- Nav bar stop -->
+	<br/><br/><br/>
+
+  <!-- Login Form ends -->
+  
+
+
+        <form name="form" id="main" action="hotel-register.html" method="get">
+            <h2>Login</h2>
+        <div class="input-parent">	
+			<label>Email</label>
+            <input type="mail" id="email" name="email" onfocusout="checkemail()"/> 
+            <small id="emailerror"></small>
+        </div>
+        <div class="input-parent">
+			 <label>Password</label>
+            <input name="password"  id="passwd" type="password"  onfocusout="checkpasswords()"/>
+            <small id="passworderror"></small>
+        </div>
+			  <button type="submit" id="submit">Login</button> <br/>
+			  <p><font color="black">Create An Account</font> <a href='signup.html'>Sign Up</a></p>
+    </form>	
+	
+ 
+  </body>
+</html>

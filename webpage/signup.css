@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-image : url(img.jpg);
+}
+
+.signup-container{
+    background: blue;
+	width: 500px;
+	height: 680px;
+	padding-bottom: 10px;
+	position: absolute;
+	top:70%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	margin: auto;
+  padding: 70px 50px 20px 50px;
+}
+
+.heading{
+    color: black;
+    text-align: center;
+    background-color: #ff4500;
+	top: 10%;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+}
+
+.form{
+    padding: 30px 30px;
+}
+
+.form-container{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-container label{
+    display: block;
+	color:white;
+    margin-bottom: 5px;
+}
+
+.form-container input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.form input::placeholder{
+    color: #2a0845;
+}
+
+.form-container i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-container span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: normal;
+    visibility: hidden;
+}
+
+
+.form-container.success input{
+    border-color: green;
+}
+
+.form-container.error input{
+    border-color: red;
+}
+
+.form-container.error span{
+    color: red;
+    visibility: visible;
+}
+
+.form-container.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: green;
+}
+
+.form-container.error i.ion-android-alert{
+    visibility: visible;
+    color: red;
+}
+
+.form #submit{
+    background-color: #ff4500;
+    border: none;
+    outline: none;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}
+
+/* mobile responsive mode */
+@media screen and (max-width: 500px)  {
+ .row {
+  flex-direction: column;
+ }
+ .row .column {
+  width: 90% !important;
+ }
+ #contact .row #phone {
+ padding-right: 180px;
+}
+}
+
+/* for from validation */
+.spanhidden {
+	visibility: hidden;
+}
+
+.spanshown {
+	visibility: visible;
+	color: red;
+}

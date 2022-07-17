@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hotel-register.css">
+</head>
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h1>Hotel Registration Form</h1>
+            <h3>Fill the form below and press the submit button!</h3>
+            <div class="row">
+                <!-- first column -->
+                <div class="column">    
+                                    
+                    <div class="fieldspaceing">
+                        <label>Hotel Name</label>
+                        <input type="text" placeholder="Hotel Name " name="name" id="name" autofocus>
+                        <small></small>
+                    </div>
+					<div class="fieldspaceing">
+                        <label>Room Available</label>
+                        <select class="formstyles-for-option-select" autofocus>
+                            <option class="formstyles-for-option-select">---Room Availability---</option>
+                            <option class="formstyles-for-option-select">0</option>
+                            <option class="formstyles-for-option-select">1</option>
+							<option class="formstyles-for-option-select">2</option>
+                            <option class="formstyles-for-option-select">3</option>
+							<option class="formstyles-for-option-select">4</option>
+                            <option class="formstyles-for-option-select">5</option>
+                        </select>
+                    </div> 
+					<div class="fieldspaceing">
+                        <label>Room Type</label>
+                        <select class="formstyles-for-option-select" autofocus>
+                            <option class="formstyles-for-option-select">---Room Type---</option>
+                            <option class="formstyles-for-option-select">Single</option>
+                            <option class="formstyles-for-option-select">Double</option>
+							<option class="formstyles-for-option-select">AC-Single</option>
+                            <option class="formstyles-for-option-select">AC-Double</option>
+                        </select>
+                    </div>    					
+                    
+                    <label>Location</label>
+                    <div class="fieldspaceing">
+                        <input type="text" placeholder="Hotel Location " id="location" name="location" autofocus>
+                    </div>
+                    <div class="fieldspaceing">
+                        <label>Price(per day)</label>
+                        <input type="price"  id="price" placeholder="Price" autofocus>
+                    </div>
+                    <div class="fieldspaceing">
+                        <p>Upload Photo</p>
+                        <input type="file" id="file"  onchange="checkfile(this.value)" >
+                    </div>
+                </div><!--coloum end-->
+            </div><!--row end-->
+            <!-- submit button -->
+            <div class="fieldspaceing">
+                <button type="submit" id="button">Submit Now</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
